@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let str="can-enter-volunteer-organization";
+    function change(str){
+        let s=str[0];
+        for(let i=1;i<str.length;i++)
+        {
+            if(str[i]=='-')
+                s=s+str[i+1].toUpperCase();
+            else if(str[i-1]!='-')
+                s=s+str[i];
+        }
+        return s;
+    }
+    console.log(change(str));
+</script>
+<script>
+    let arr=["myfirstactivity","today activity","yourActivity","activitys"]
+    arr.push("activity");
+    newArr=arr;
+    console.log(newArr);
+</script>
+</html>
